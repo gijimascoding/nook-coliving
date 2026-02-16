@@ -115,9 +115,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ── Form submission (demo) ──
-  const forms = document.querySelectorAll('form');
-  forms.forEach(form => {
+  // ── Contact form submission (Web3Forms) ──
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const submitBtn = contactForm.querySelector('[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = 'Sending...';
+      submitBtn.disabled = true;
+
+      const formData = new FormData(contactForm);
+      const data = Object.fromEntries(formData);
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(res => res.json())
+        .then(result => {
+          if (result.success) {
+            submitBtn.innerHTML = '✓ Sent! We\'ll be in touch 🎉';
+            submitBtn.style.background = 'var(--clr-sage)';
+            contactForm.reset();
+            setTimeout(() => {
+              submitBtn.innerHTML = originalText;
+              submitBtn.style.background = '';
+              submitBtn.disabled = false;
+            }, 3000);
+          } else {
+            submitBtn.innerHTML = '✗ Something went wrong. Try again.';
+            submitBtn.style.background = 'var(--clr-coral)';
+            setTimeout(() => {
+              submitBtn.innerHTML = originalText;
+              submitBtn.style.background = '';
+              submitBtn.disabled = false;
+            }, 3000);
+          }
+        })
+        .catch(() => {
+          submitBtn.innerHTML = '✗ Network error. Please try again.';
+          submitBtn.style.background = 'var(--clr-coral)';
+          setTimeout(() => {
+            submitBtn.innerHTML = originalText;
+            submitBtn.style.background = '';
+            submitBtn.disabled = false;
+          }, 3000);
+        });
+    });
+  }
+
+  // ── Other form submission (demo — modal apply forms) ──
+  document.querySelectorAll('form:not(#contact-form)').forEach(form => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const submitBtn = form.querySelector('[type="submit"]');
@@ -131,7 +181,6 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.style.background = '';
         submitBtn.disabled = false;
         form.reset();
-        // Close modal if inside one
         const modal = form.closest('.modal-overlay');
         if (modal) {
           modal.classList.remove('active');

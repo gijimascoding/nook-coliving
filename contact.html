@@ -54,22 +54,24 @@
         <!-- Form -->
         <div class="contact-form fade-in">
           <h2 style="margin-bottom: var(--space-md);">Send Us a Message</h2>
-          <form id="contact-form">
+          <form id="contact-form" method="POST">
+            <input type="hidden" name="access_key" value="2a6fca8f-3a51-4c34-90cd-984293940359">
+            <input type="hidden" name="subject" value="New Contact Form Submission — Nook">
             <div class="form-group">
               <label for="contact-name">Full Name *</label>
-              <input type="text" id="contact-name" placeholder="Your name" required>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required>
             </div>
             <div class="form-group">
               <label for="contact-email">Email *</label>
-              <input type="email" id="contact-email" placeholder="hello@example.com" required>
+              <input type="email" id="contact-email" name="email" placeholder="hello@example.com" required>
             </div>
             <div class="form-group">
               <label for="contact-phone">Phone (optional)</label>
-              <input type="tel" id="contact-phone" placeholder="+44 7XXX XXXXXX">
+              <input type="tel" id="contact-phone" name="phone" placeholder="+44 7XXX XXXXXX">
             </div>
             <div class="form-group">
               <label for="contact-subject">What's This About?</label>
-              <select id="contact-subject">
+              <select id="contact-subject" name="enquiry_type">
                 <option value="">Select an option...</option>
                 <option value="viewing">Book a Viewing</option>
                 <option value="enquiry">General Enquiry</option>
@@ -81,7 +83,7 @@
             </div>
             <div class="form-group">
               <label for="contact-message">Your Message *</label>
-              <textarea id="contact-message" placeholder="Tell us what you need..." required></textarea>
+              <textarea id="contact-message" name="message" placeholder="Tell us what you need..." required></textarea>
             </div>
             <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Send Message &#x2192;</button>
           </form>
@@ -95,7 +97,7 @@
               <div class="contact-info__icon">📧</div>
               <div>
                 <h4>Email</h4>
-                <p>hello@nookrent.com</p>
+                <p>info@nookrent.com</p>
               </div>
             </div>
             <div class="contact-info__item">
