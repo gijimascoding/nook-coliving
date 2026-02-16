@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Rooms | Nook Co-Living London</title>
+  <meta name="description" content="Explore fully furnished co-living rooms across London. From cosy basics to luxury deluxe suites — all bills included, flexible leases.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80'>🏡</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><span>nook</span></a>
+      <div class="nav__links">
+        <a href="rooms.html" class="nav__link" style="color:var(--clr-coral)">Rooms</a>
+        <a href="index.html#how-it-works" class="nav__link">How It Works</a>
+        <a href="index.html#neighbourhoods" class="nav__link">Neighbourhoods</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="index.html#faq" class="nav__link">FAQ</a>
+      </div>
+      <div class="nav__actions">
+        <a href="rooms.html" class="btn btn--outline btn--sm">Browse Rooms</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Get in Touch</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Menu" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile-menu" id="mobile-menu">
+      <a href="rooms.html">Rooms</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#neighbourhoods">Neighbourhoods</a>
+      <a href="about.html">About</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Find Your Perfect Room 🔑</h1>
+      <p>16 cosy rooms across London &mdash; all fully furnished, bills included</p>
+    </div>
+  </section>
+
+  <!-- Filters + Rooms -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Rooms</button>
+        <button class="filter-btn" data-filter="canary-wharf">Canary Wharf</button>
+        <button class="filter-btn" data-filter="central-london">Central London</button>
+        <button class="filter-btn" data-filter="islington">Islington</button>
+        <button class="filter-btn" data-filter="deluxe">Deluxe</button>
+        <button class="filter-btn" data-filter="flex">Flex</button>
+        <button class="filter-btn" data-filter="master">Master</button>
+      </div>
+
+      <!-- Room count -->
+      <div class="rooms-count">🏠 Showing <strong>16</strong> rooms</div>
+
+      <!-- Rooms Grid -->
+      <div class="rooms-grid">
+
+        <!-- 1. Deluxe Room - Canary Wharf -->
+        <a href="room-deluxe-canary-wharf.html" class="room-card fade-in" data-area="canary-wharf" data-type="deluxe">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/deluxe-room-canary-wharf-deluxe-1-quay-square-london-student-housing.jpg" alt="Deluxe Room - Canary Wharf">
+            <div class="room-card__badges">
+              <span class="badge badge--coral">Popular</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 7 Baltimore Wharf, Canary Wharf</div>
+            <div class="room-card__name">Deluxe Room &mdash; Canary Wharf</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 Double Bed</span>
+              <span class="room-card__amenity">📺 60" TV</span>
+              <span class="room-card__amenity">🏊 Pool</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£355 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 2. Deluxe Room - Canary Wharf | South Quay -->
+        <a href="room-deluxe-canary-wharf-south-quay.html" class="room-card fade-in" data-area="canary-wharf" data-type="deluxe">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/deluxe-room-canary-wharf-or-south-quay-88956515.jpeg" alt="Deluxe Room - South Quay">
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 Discovery Dock, Canary Wharf</div>
+            <div class="room-card__name">Deluxe Room &mdash; Canary Wharf | South Quay</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 Double Bed</span>
+              <span class="room-card__amenity">📺 Smart TV</span>
+              <span class="room-card__amenity">🏋️ Gym</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£365 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 3. Deluxe Room - Central London -->
+        <a href="room-deluxe-central-london.html" class="room-card fade-in" data-area="central-london" data-type="deluxe">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/deluxe-room-central-london-lawrencedeluxe2.jpeg" alt="Deluxe Room - Central London">
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 238 City Rd, Central London</div>
+            <div class="room-card__name">Deluxe Room &mdash; Central London</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 Double Bed</span>
+              <span class="room-card__amenity">📺 60" TV</span>
+              <span class="room-card__amenity">💻 Desk</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£295 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 4. Deluxe Room - Central London | Dingley Road -->
+        <a href="room-deluxe-dingley-road.html" class="room-card fade-in" data-area="central-london" data-type="deluxe">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/deluxe-room-central-london-or-dingley-road-1-deluxe-22-dingley.jpg" alt="Deluxe Room - Dingley Road">
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 22 Dingley Rd, Central London</div>
+            <div class="room-card__name">Deluxe Room &mdash; Central London | Dingley Road</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 Double Bed</span>
+              <span class="room-card__amenity">📺 Smart TV</span>
+              <span class="room-card__amenity">☕ Kitchen</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£285 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 5. Deluxe Room - Islington | Whitechapel -->
+        <a href="room-deluxe-islington.html" class="room-card fade-in" data-area="islington" data-type="deluxe">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/rhodes-house-1743141251981-image-1.jpg" alt="Deluxe Room - Islington">
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 Islington / Whitechapel</div>
+            <div class="room-card__name">Deluxe Room &mdash; Islington | Whitechapel</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 Double Bed</span>
+              <span class="room-card__amenity">📺 Smart TV</span>
+              <span class="room-card__amenity">⚡ Bills Inc.</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£275 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 6. Flex Basic - Canary Wharf | South Quay -->
+        <a href="room-flex-basic-canary-wharf.html" class="room-card fade-in" data-area="canary-wharf" data-type="flex">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/flex-basic-canary-wharf-or-south-quay-whatsapp-image-2021-02-24-at-202053-3.jpeg" alt="Flex Basic - Canary Wharf">
+            <div class="room-card__badges">
+              <span class="badge badge--amber">Best Value</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 Discovery Dock, Canary Wharf</div>
+            <div class="room-card__name">Flex Basic &mdash; Canary Wharf | South Quay</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 Single Bed</span>
+              <span class="room-card__amenity">📶 WiFi</span>
+              <span class="room-card__amenity">🏊 Pool</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£255 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 7. Flex Basic - Central London -->
+        <a href="room-flex-basic-central-london.html" class="room-card fade-in" data-area="central-london" data-type="flex">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/flex-basic-central-london-5.jpg" alt="Flex Basic - Central London">
+            <div class="room-card__badges">
+              <span class="badge badge--amber">Budget Friendly</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 238 City Rd, Central London</div>
+            <div class="room-card__name">Flex Basic &mdash; Central London</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 Single Bed</span>
+              <span class="room-card__amenity">📶 WiFi</span>
+              <span class="room-card__amenity">💻 Desk</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£215 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 8. Flex Basic - Central London | Dingley Road -->
+        <a href="room-flex-basic-dingley-road.html" class="room-card fade-in" data-area="central-london" data-type="flex">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/flex-basic-central-london-or-dingley-road-1-dingley-flex-basic-london-student-housing.jpg" alt="Flex Basic - Dingley Road">
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 22 Dingley Rd, Central London</div>
+            <div class="room-card__name">Flex Basic &mdash; Central London | Dingley Road</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 Single Bed</span>
+              <span class="room-card__amenity">📶 WiFi</span>
+              <span class="room-card__amenity">⚡ Bills Inc.</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£205 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 9. Flex Plus - Canary Wharf -->
+        <a href="room-flex-plus-canary-wharf.html" class="room-card fade-in" data-area="canary-wharf" data-type="flex">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/flex-plus-canary-wharf-cwflex3.jpg" alt="Flex Plus - Canary Wharf">
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 7 Baltimore Wharf, Canary Wharf</div>
+            <div class="room-card__name">Flex Plus &mdash; Canary Wharf</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 Double Bed</span>
+              <span class="room-card__amenity">📺 Smart TV</span>
+              <span class="room-card__amenity">🏊 Pool</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£315 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 10. Flex Plus with Balcony - Canary Wharf | South Quay -->
+        <a href="room-flex-plus-balcony.html" class="room-card fade-in" data-area="canary-wharf" data-type="flex">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/flex-plus-with-balcony-canary-wharf-or-south-quay-1-flex-balcony-south-quay-canary-wharf-london-housing.jpg" alt="Flex Plus Balcony - South Quay">
+            <div class="room-card__badges">
+              <span class="badge badge--sage">Balcony</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 Discovery Dock, Canary Wharf</div>
+            <div class="room-card__name">Flex Plus with Balcony &mdash; Canary Wharf</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 Double Bed</span>
+              <span class="room-card__amenity">🌅 Balcony</span>
+              <span class="room-card__amenity">🏋️ Gym</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£340 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 11. Flex Premium - Central London -->
+        <a href="room-flex-premium-central-london.html" class="room-card fade-in" data-area="central-london" data-type="flex">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/flex-premium-central-london-lawrenceflexpremium.jpeg" alt="Flex Premium - Central London">
+            <div class="room-card__badges">
+              <span class="badge badge--coral">Premium</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 238 City Rd, Central London</div>
+            <div class="room-card__name">Flex Premium &mdash; Central London</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 Double Bed</span>
+              <span class="room-card__amenity">📺 60" TV</span>
+              <span class="room-card__amenity">💻 Desk</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£265 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 12. Master Room - Canary Wharf | South Quay -->
+        <a href="room-master-canary-wharf-south-quay.html" class="room-card fade-in" data-area="canary-wharf" data-type="master">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/master-room-and-ensuite-bath-canary-wharf-or-south-quay-ensuite-1-quay-square-london-student-housing.jpg" alt="Master Room - South Quay">
+            <div class="room-card__badges">
+              <span class="badge badge--sage">En-Suite</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 Discovery Dock, Canary Wharf</div>
+            <div class="room-card__name">Master Room &amp; En-Suite &mdash; South Quay</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 King Bed</span>
+              <span class="room-card__amenity">🚿 En-Suite</span>
+              <span class="room-card__amenity">🏊 Pool</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£425 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 13. Master Room - Canary Wharf -->
+        <a href="room-master-canary-wharf.html" class="room-card fade-in" data-area="canary-wharf" data-type="master">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/master-room-and-ensuite-bath-canary-wharf-1min.jpg" alt="Master Room - Canary Wharf">
+            <div class="room-card__badges">
+              <span class="badge badge--sage">En-Suite</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 7 Baltimore Wharf, Canary Wharf</div>
+            <div class="room-card__name">Master Room &amp; En-Suite &mdash; Canary Wharf</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 King Bed</span>
+              <span class="room-card__amenity">🚿 En-Suite</span>
+              <span class="room-card__amenity">🏋️ Gym</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£415 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 14. Master Room - Central London -->
+        <a href="room-master-central-london.html" class="room-card fade-in" data-area="central-london" data-type="master">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/master-room-and-ensuite-bath-central-london-lawrencemaster.jpeg" alt="Master Room - Central London">
+            <div class="room-card__badges">
+              <span class="badge badge--sage">En-Suite</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 238 City Rd, Central London</div>
+            <div class="room-card__name">Master Room &amp; En-Suite &mdash; Central London</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 King Bed</span>
+              <span class="room-card__amenity">🚿 En-Suite</span>
+              <span class="room-card__amenity">💻 Desk</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£345 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 15. Master Room - Central London | Dingley Road -->
+        <a href="room-master-dingley-road.html" class="room-card fade-in" data-area="central-london" data-type="master">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/master-room-and-ensuite-bath-central-london-or-dingley-road-1-master-22-dingley-london-student-housing.jpg" alt="Master Room - Dingley Road">
+            <div class="room-card__badges">
+              <span class="badge badge--sage">En-Suite</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 22 Dingley Rd, Central London</div>
+            <div class="room-card__name">Master Room &amp; En-Suite &mdash; Dingley Road</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 King Bed</span>
+              <span class="room-card__amenity">🚿 En-Suite</span>
+              <span class="room-card__amenity">☕ Kitchen</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£335 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 16. Master Room - Islington | Whitechapel -->
+        <a href="room-master-islington.html" class="room-card fade-in" data-area="islington" data-type="master">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/master-room-and-ensuite-bath-with-private-balcony-canary-wharf-or-south-quay-ensuite-balcony-1-quay-square-london-student-housing.jpg" alt="Master Room - Islington">
+            <div class="room-card__badges">
+              <span class="badge badge--sage">En-Suite</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 Islington / Whitechapel</div>
+            <div class="room-card__name">Master Room &amp; En-Suite &mdash; Islington</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 King Bed</span>
+              <span class="room-card__amenity">🚿 En-Suite</span>
+              <span class="room-card__amenity">⚡ Bills Inc.</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£325 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="cta-banner fade-in">
+        <h2>Can't Decide? Let Us Help! 😊</h2>
+        <p>Tell us your budget and preferences and we'll match you to the perfect room.</p>
+        <a href="contact.html" class="btn btn--ghost btn--lg">Chat With Us &#x2192;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>nook</h3>
+          <p>Cosy co-living in London for students and young professionals. Fully furnished, bills included, community built-in.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <a href="rooms.html">All Rooms</a>
+          <a href="about.html">About Nook</a>
+          <a href="contact.html">Contact</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <h4>Areas</h4>
+          <a href="rooms.html#canary-wharf">Canary Wharf</a>
+          <a href="rooms.html#central-london">Central London</a>
+          <a href="rooms.html#islington">Islington</a>
+          <a href="rooms.html#whitechapel">Whitechapel</a>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html#cookies">Cookies</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Nook. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+          <a href="#" aria-label="Email">✉️</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">&#x2191;</button>
+  <script src="script.js"></script>
+</body>
+</html>

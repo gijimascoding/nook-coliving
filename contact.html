@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Nook Co-Living London</title>
+  <meta name="description" content="Get in touch with Nook. Book a viewing, ask about our rooms, or just say hello. We're friendly, we promise.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80'>🏡</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><span>nook</span></a>
+      <div class="nav__links">
+        <a href="rooms.html" class="nav__link">Rooms</a>
+        <a href="index.html#how-it-works" class="nav__link">How It Works</a>
+        <a href="index.html#neighbourhoods" class="nav__link">Neighbourhoods</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="index.html#faq" class="nav__link">FAQ</a>
+      </div>
+      <div class="nav__actions">
+        <a href="rooms.html" class="btn btn--outline btn--sm">Browse Rooms</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Get in Touch</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Menu" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile-menu" id="mobile-menu">
+      <a href="rooms.html">Rooms</a>
+      <a href="about.html">About</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Let's Chat ☕</h1>
+      <p>Book a viewing, ask a question, or just say hello. We reply within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form fade-in">
+          <h2 style="margin-bottom: var(--space-md);">Send Us a Message</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Full Name *</label>
+              <input type="text" id="contact-name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email *</label>
+              <input type="email" id="contact-email" placeholder="hello@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-phone">Phone (optional)</label>
+              <input type="tel" id="contact-phone" placeholder="+44 7XXX XXXXXX">
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">What's This About?</label>
+              <select id="contact-subject">
+                <option value="">Select an option...</option>
+                <option value="viewing">Book a Viewing</option>
+                <option value="enquiry">General Enquiry</option>
+                <option value="pricing">Pricing Question</option>
+                <option value="maintenance">Maintenance Request</option>
+                <option value="partnership">Partnership Enquiry</option>
+                <option value="other">Something Else</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Your Message *</label>
+              <textarea id="contact-message" placeholder="Tell us what you need..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Send Message &#x2192;</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="fade-in-right">
+          <div class="contact-info__card">
+            <h3 style="margin-bottom: var(--space-md); font-family: var(--ff-heading);">Quick Contact</h3>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <p>hello@nookrent.com</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">📱</div>
+              <div>
+                <h4>WhatsApp</h4>
+                <p>+44 20 XXXX XXXX</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">📍</div>
+              <div>
+                <h4>Office</h4>
+                <p>London, United Kingdom</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">⏰</div>
+              <div>
+                <h4>Response Time</h4>
+                <p>We aim to reply within 24 hours, usually much sooner!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info__card" style="background: var(--clr-sage-light);">
+            <h3 style="margin-bottom: var(--space-sm); font-family: var(--ff-heading);">🏠 Want to See a Room?</h3>
+            <p style="color: var(--clr-text-light); margin-bottom: var(--space-md);">We offer both in-person and virtual viewings. Book through the form or message us directly on WhatsApp for a quick response.</p>
+            <a href="rooms.html" class="btn btn--secondary btn--sm">Browse Rooms First &#x2192;</a>
+          </div>
+
+          <div class="contact-info__card" style="background: var(--clr-amber-light);">
+            <h3 style="margin-bottom: var(--space-sm); font-family: var(--ff-heading);">🤝 For Partners</h3>
+            <p style="color: var(--clr-text-light);">Are you a property owner in London? We're always looking for beautiful apartments to add to our portfolio. Get in touch to discuss a partnership.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>nook</h3>
+          <p>Cosy co-living in London for students and young professionals. Fully furnished, bills included, community built-in.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <a href="rooms.html">All Rooms</a>
+          <a href="about.html">About Nook</a>
+          <a href="contact.html">Contact</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <h4>Areas</h4>
+          <a href="rooms.html#canary-wharf">Canary Wharf</a>
+          <a href="rooms.html#central-london">Central London</a>
+          <a href="rooms.html#islington">Islington</a>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Nook. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+          <a href="#" aria-label="Email">✉️</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">&#x2191;</button>
+  <script src="script.js"></script>
+</body>
+</html>

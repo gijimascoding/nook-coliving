@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nook | Cosy Co-Living in London</title>
+  <meta name="description" content="Find your cosy corner in London. Nook offers fully furnished co-living rooms with flexible leases, community vibes, and everything included. Move in, feel at home.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80'>🏡</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><span>nook</span></a>
+      <div class="nav__links">
+        <a href="rooms.html" class="nav__link">Rooms</a>
+        <a href="#how-it-works" class="nav__link">How It Works</a>
+        <a href="#neighbourhoods" class="nav__link">Neighbourhoods</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </div>
+      <div class="nav__actions">
+        <a href="rooms.html" class="btn btn--outline btn--sm">Browse Rooms</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Get in Touch</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Menu" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile-menu" id="mobile-menu">
+      <a href="rooms.html">Rooms</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#neighbourhoods">Neighbourhoods</a>
+      <a href="about.html">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg-shapes">
+      <div class="hero__shape hero__shape--1"></div>
+      <div class="hero__shape hero__shape--2"></div>
+      <div class="hero__shape hero__shape--3"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__text fade-in">
+        <div class="hero__eyebrow">🏡 Co-living in London</div>
+        <h1 class="hero__title">
+          Find Your Cosy<br><span class="highlight">Little Nook</span><br>in London
+        </h1>
+        <p class="hero__subtitle">
+          Fully furnished rooms in beautiful shared flats across London. Flexible leases, everything included, and a community that actually feels like home.
+        </p>
+        <div class="hero__ctas">
+          <a href="rooms.html" class="btn btn--primary btn--lg">Explore Rooms &#x2192;</a>
+          <a href="#how-it-works" class="btn btn--outline btn--lg">How It Works</a>
+        </div>
+        <div class="hero__trust-badges">
+          <div class="hero__trust-item">
+            <span class="trust-icon">&#10003;</span> Fully Furnished
+          </div>
+          <div class="hero__trust-item">
+            <span class="trust-icon">&#10003;</span> Bills Included
+          </div>
+          <div class="hero__trust-item">
+            <span class="trust-icon">&#10003;</span> Flexible Leases
+          </div>
+        </div>
+      </div>
+      <div class="hero__images fade-in-right">
+        <div class="hero__img hero__img--large hero__img--accent">
+          <img src="https://api.fllat.com/image/medium/deluxe-room-canary-wharf-deluxe-1-quay-square-london-student-housing.jpg" alt="Cosy furnished bedroom">
+        </div>
+        <div class="hero__img">
+          <img src="https://api.fllat.com/image/medium/master-room-and-ensuite-bath-central-london-lawrencemaster.jpeg" alt="Modern shared kitchen">
+        </div>
+        <div class="hero__img">
+          <img src="https://api.fllat.com/image/medium/flex-plus-canary-wharf-cwflex3.jpg" alt="Flatmates having fun">
+        </div>
+        <div class="hero__floating-card">
+          <span class="card-emoji">🎉</span>
+          <div class="card-text">
+            150+ Happy Residents
+            <span>Across London</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Nook -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="emoji-accent">✨</span>
+        <h2>Why Nook?</h2>
+        <p>We've taken the headache out of renting. Just pack your bags and settle in.</p>
+      </div>
+      <div class="perks-grid">
+        <div class="perk-card fade-in">
+          <div class="perk-card__icon perk-card__icon--coral">🛋️</div>
+          <h3>Fully Furnished</h3>
+          <p>Every room comes with a comfy bed, desk, wardrobe, and all the bits you need. Just bring your toothbrush.</p>
+        </div>
+        <div class="perk-card fade-in">
+          <div class="perk-card__icon perk-card__icon--sage">📋</div>
+          <h3>Bills? Sorted.</h3>
+          <p>WiFi, electricity, water, and council tax &mdash; all included in one simple weekly price.</p>
+        </div>
+        <div class="perk-card fade-in">
+          <div class="perk-card__icon perk-card__icon--amber">📅</div>
+          <h3>Flexible Leases</h3>
+          <p>Whether you need 3 months or a full year, we have lease options that bend to your plans.</p>
+        </div>
+        <div class="perk-card fade-in">
+          <div class="perk-card__icon perk-card__icon--lavender">🤝</div>
+          <h3>Real Community</h3>
+          <p>Movie nights, coffee mornings, and flatmates who become friends. Loneliness? Not here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Rooms Preview -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="emoji-accent">🏠</span>
+        <h2>Featured Rooms</h2>
+        <p>Peek at some of our loveliest nooks across London</p>
+      </div>
+      <div class="rooms-grid">
+        <a href="room-deluxe-canary-wharf.html" class="room-card fade-in">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/deluxe-room-canary-wharf-deluxe-1-quay-square-london-student-housing.jpg" alt="Deluxe Room - Canary Wharf">
+            <div class="room-card__badges">
+              <span class="badge badge--coral">Popular</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 Canary Wharf, London</div>
+            <div class="room-card__name">Deluxe Room &mdash; Canary Wharf</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 Double Bed</span>
+              <span class="room-card__amenity">📺 Smart TV</span>
+              <span class="room-card__amenity">🏊 Pool</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£355 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View Room</span>
+            </div>
+          </div>
+        </a>
+        <a href="room-master-central-london.html" class="room-card fade-in">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/master-room-and-ensuite-bath-central-london-lawrencemaster.jpeg" alt="Master Room - Central London">
+            <div class="room-card__badges">
+              <span class="badge badge--sage">En-Suite</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 Central London</div>
+            <div class="room-card__name">Master Room &amp; En-Suite &mdash; Central London</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 King Bed</span>
+              <span class="room-card__amenity">🚿 Private Bath</span>
+              <span class="room-card__amenity">💻 Desk</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£345 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View Room</span>
+            </div>
+          </div>
+        </a>
+        <a href="room-flex-basic-central-london.html" class="room-card fade-in">
+          <div class="room-card__image">
+            <img src="https://api.fllat.com/image/medium/flex-basic-central-london-5.jpg" alt="Flex Basic - Central London">
+            <div class="room-card__badges">
+              <span class="badge badge--amber">Best Value</span>
+            </div>
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__location">📍 Central London</div>
+            <div class="room-card__name">Flex Basic &mdash; Central London</div>
+            <div class="room-card__amenities">
+              <span class="room-card__amenity">🛏 Single Bed</span>
+              <span class="room-card__amenity">📶 Fast WiFi</span>
+              <span class="room-card__amenity">⚡ Bills Inc.</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">£215 <span>/week</span></div>
+              <span class="btn btn--primary btn--sm">View Room</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div style="text-align:center; margin-top: var(--space-lg);">
+        <a href="rooms.html" class="btn btn--outline btn--lg">See All Rooms &#x2192;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="emoji-accent">🗺️</span>
+        <h2>How It Works</h2>
+        <p>Three easy steps to your new London home</p>
+      </div>
+      <div class="steps-timeline fade-in">
+        <div class="step-item">
+          <div class="step-item__number">1</div>
+          <h3>Pick Your Nook</h3>
+          <p>Browse our rooms and find the one that speaks to you. Filter by area, price, and room type.</p>
+        </div>
+        <div class="step-arrow">&#x2192;</div>
+        <div class="step-item">
+          <div class="step-item__number">2</div>
+          <h3>Book a Viewing</h3>
+          <p>Pop in for a tour (in-person or virtual) and meet your potential flatmates. No pressure.</p>
+        </div>
+        <div class="step-arrow">&#x2192;</div>
+        <div class="step-item">
+          <div class="step-item__number">3</div>
+          <h3>Move In & Chill</h3>
+          <p>Sign up, grab your keys, and settle into your cosy new nook. Welcome home!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Neighbourhoods -->
+  <section class="section section--peach" id="neighbourhoods">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="emoji-accent">📍</span>
+        <h2>Our London Neighbourhoods</h2>
+        <p>From the buzz of Canary Wharf to the charm of Central London</p>
+      </div>
+      <div class="neighbourhood-grid">
+        <a href="rooms.html#canary-wharf" class="neighbourhood-card fade-in">
+          <img src="https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?w=600&h=500&fit=crop" alt="Canary Wharf">
+          <div class="neighbourhood-card__overlay">
+            <h3>Canary Wharf</h3>
+            <p>Luxury high-rises, waterfront views, and quick tube links</p>
+          </div>
+        </a>
+        <a href="rooms.html#central-london" class="neighbourhood-card fade-in">
+          <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&h=500&fit=crop" alt="Central London">
+          <div class="neighbourhood-card__overlay">
+            <h3>Central London</h3>
+            <p>In the heart of it all &mdash; culture, food, and nightlife on your doorstep</p>
+          </div>
+        </a>
+        <a href="rooms.html#islington" class="neighbourhood-card fade-in">
+          <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=600&h=500&fit=crop" alt="Islington & Whitechapel">
+          <div class="neighbourhood-card__overlay">
+            <h3>Islington &amp; Whitechapel</h3>
+            <p>Trendy cafes, markets, and vibrant East London energy</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community / Lifestyle -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="emoji-accent">🧡</span>
+        <h2>Life at Nook</h2>
+        <p>More than just a room &mdash; it's a lifestyle</p>
+      </div>
+      <div class="lifestyle-grid fade-in">
+        <div class="lifestyle-grid__item">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=400&fit=crop" alt="Morning coffee together">
+        </div>
+        <div class="lifestyle-grid__item">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=400&fit=crop" alt="Working from home">
+        </div>
+        <div class="lifestyle-grid__item">
+          <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=500&h=400&fit=crop" alt="Dinner with flatmates">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="emoji-accent">💬</span>
+        <h2>What Our Residents Say</h2>
+        <p>Real words from real nook-dwellers</p>
+      </div>
+      <div class="testimonials-scroll fade-in">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"Moving to London was scary until I found Nook. Within a week I had a gorgeous room and three brilliant flatmates. It felt like home from day one."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">🧑‍💼</div>
+            <div>
+              <div class="testimonial-card__name">Emma L.</div>
+              <div class="testimonial-card__role">Marketing Intern, Canary Wharf</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"The all-inclusive pricing is a lifesaver. No surprise bills, no arguments about who owes what. Just one payment and done. Love it."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">👨‍💻</div>
+            <div>
+              <div class="testimonial-card__name">Raj P.</div>
+              <div class="testimonial-card__role">Software Developer, Central London</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"I came for my master's and needed somewhere quick. The room was exactly as shown, the location is perfect, and the community events are a proper laugh."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">👩‍🎓</div>
+            <div>
+              <div class="testimonial-card__name">Sofia M.</div>
+              <div class="testimonial-card__role">Postgrad Student, Islington</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"The quality of the rooms is unbelievable for London. My deluxe room at Canary Wharf has a pool, gym, and concierge. Feels like a hotel but cosier!"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">🧑‍🎨</div>
+            <div>
+              <div class="testimonial-card__name">Tomasz K.</div>
+              <div class="testimonial-card__role">Graphic Designer, Canary Wharf</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="emoji-accent">❓</span>
+        <h2>Got Questions?</h2>
+        <p>We've probably got the answers right here</p>
+      </div>
+      <div class="faq-list fade-in">
+        <div class="faq-item">
+          <button class="faq-item__question">
+            What's included in the rent?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">Everything! Your weekly rent covers a fully furnished room, WiFi, electricity, water, and council tax. No hidden costs, no surprise bills.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            How long are the leases?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">We offer flexible lease terms ranging from 3 months to 12 months. If you need a shorter or longer stay, just chat with us and we'll sort something out.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Can I see the room before booking?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">Absolutely! We offer both in-person viewings and virtual tours via video call. We always recommend seeing the space before committing. Just get in touch to book a time.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Who are my flatmates?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">Our residents are typically young professionals, students, and interns aged 20-35. We carefully screen all applicants to ensure a respectful, friendly living environment for everyone.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Is there a deposit?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">Yes, we require a refundable deposit equivalent to 2 weeks' rent. This is held securely in a government-approved deposit protection scheme and returned when you move out.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Can I bring my own furniture?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">All rooms come fully furnished, so you don't need to bring anything. However, you're welcome to add personal touches &mdash; fairy lights, photos, plants &mdash; to make it feel like yours.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner fade-in">
+        <h2>Ready to Find Your Nook? 🏡</h2>
+        <p>Browse our rooms across London and move in as soon as next week.</p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <a href="rooms.html" class="btn btn--ghost btn--lg">Browse Rooms &#x2192;</a>
+          <a href="contact.html" class="btn btn--ghost btn--lg">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>nook</h3>
+          <p>Cosy co-living in London for students and young professionals. Fully furnished, bills included, community built-in.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <a href="rooms.html">All Rooms</a>
+          <a href="about.html">About Nook</a>
+          <a href="contact.html">Contact</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <h4>Areas</h4>
+          <a href="rooms.html#canary-wharf">Canary Wharf</a>
+          <a href="rooms.html#central-london">Central London</a>
+          <a href="rooms.html#islington">Islington</a>
+          <a href="rooms.html#whitechapel">Whitechapel</a>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html#cookies">Cookies</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Nook. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+          <a href="#" aria-label="Email">✉️</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Modal -->
+  <div class="modal-overlay" id="modal-apply">
+    <div class="modal">
+      <button class="modal__close" aria-label="Close">&times;</button>
+      <h2>Get in Touch 🏡</h2>
+      <p style="margin-bottom: 1.5rem; color: var(--clr-text-light);">Fill in the form and we'll get back to you within 24 hours.</p>
+      <form id="apply-form">
+        <div class="form-group">
+          <label for="apply-name">Full Name</label>
+          <input type="text" id="apply-name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="apply-email">Email</label>
+          <input type="email" id="apply-email" placeholder="hello@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="apply-phone">Phone (optional)</label>
+          <input type="tel" id="apply-phone" placeholder="+44 7XXX XXXXXX">
+        </div>
+        <div class="form-group">
+          <label for="apply-move">Preferred Move-in Date</label>
+          <input type="date" id="apply-move">
+        </div>
+        <div class="form-group">
+          <label for="apply-message">Message</label>
+          <textarea id="apply-message" placeholder="Tell us about yourself and what you're looking for..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Send Enquiry &#x2192;</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">&#x2191;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
